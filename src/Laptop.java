@@ -42,15 +42,16 @@ public abstract String batteryInfo();
                 "Model: " + getModel() + "; " + "\n" +
                 "Design: " + getDesign() + "; " + "\n" +
                 "Form: " + getForm() + "; " + "\n" +
-                getMemory().memoryInfo() + "; " + "\n" +
-                getGraphicCard().graphicCardInfo() + "; " + "\n" +
-                getAudioCard().audioCardInfo() + "; " + "\n" +
-                getCpu().cpuInfo()+"; "+"\n"+
+                getMemory().toString() + "; " + "\n" +
+                getGraphicCard().toString() + "; " + "\n" +
+                getAudioCard().toString() + "; " + "\n" +
+                getCpu().toString()+"; "+"\n"+
                 "Battery capacity: "+ getBatteryCapacity()+"w"+"; "+"\n"+
                 "Screen size: "+getScreenSize());
     };
 
-}
+    }
+
 
 
 

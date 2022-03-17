@@ -37,10 +37,14 @@ public class Memory {
     }
 
     //выдаём информацию о Memory
-    public String memoryInfo() {
+
+    @Override
+    public String toString() {
         return ("Memory: " +
                 "Memory manufacture: " + getManufacture() + "; " +
                 "Capacity: " + getCapacity() + "; " +
                 "Memory Type: " + getMemoryType());
     }
+
+    ;
 }

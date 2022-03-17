@@ -28,9 +28,11 @@ public class AudioCard {
     }
 
     //выдаём информацию об Audiocard
-    public String audioCardInfo() {
+
+    @Override
+    public String toString() {
         return ("AudioCard: " +
                 "Manufacture: " + getManufacture() + "; " +
-                "Audio chip manufacture: " + getAudioChipManufacture());
+             "Audio chip manufacture: " + getAudioChipManufacture());
     }
 }

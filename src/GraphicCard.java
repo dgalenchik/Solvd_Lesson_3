@@ -37,10 +37,11 @@ public class GraphicCard {
     }
 
     //выдаём информацию о Graphic Card
-    public String graphicCardInfo() {
-        return ("Graphic card: " +
-                "Graphic card manufacture: " + getManufacture() + "; " +
-                "Memory capacity: " + getVideoMemoryCapacity() + "; " +
-                "Serial number: " + getVideoChipSerialNumber());
-    }
+    @Override
+    public String toString() {
+            return ("Graphic card: " +
+                    "Graphic card manufacture: " + getManufacture() + "; " +
+                    "Memory capacity: " + getVideoMemoryCapacity() + "; " +
+                    "Serial number: " + getVideoChipSerialNumber());
+        };
 }

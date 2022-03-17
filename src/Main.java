@@ -29,18 +29,12 @@ public class Main {
         macbook.send(letter, secondClient, firstClient);
         System.out.println("---------------------");
         //Реализовываем методы Macbook
-        System.out.println(macbook.turnOn());
-        System.out.println(macbook.batteryInfo());
-        System.out.println(macbook.checkOsVersion());
+        System.out.println(macbook.toString());
+        System.out.println("-------------");
         //Реализовываем методы Hp
-        System.out.println("---------------------");
-        System.out.println(hp.turnOn());
-        System.out.println(hp.batteryInfo());
-        System.out.println(hp.checkOsVersion());
+        System.out.println(hp.toString());
+        System.out.println("-------------");
         //Реализовываем методы Lenovo
-        System.out.println("---------------------");
-        System.out.println(lenovo.turnOn());
-        System.out.println(lenovo.batteryInfo());
-        System.out.println(lenovo.checkOsVersion());
+        System.out.println(lenovo.toString());
     }
 }

@@ -27,10 +27,13 @@ public class Cpu {
     }
 
     //Выдаём информацию о CPU
-    public String cpuInfo() {
+
+    @Override
+    public String toString() {
         return ("Cpu: " + "Cpu manufacture: " +
                 getCpuManufacture() + "; " +
                 "Cpu frequency: " +
                 getCpuFrequency());
-    }
+    };
+
 }

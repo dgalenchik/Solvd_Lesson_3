@@ -17,4 +17,9 @@ public class Lenovo extends Laptop {
     public String batteryInfo() {
         return ("Lenovo Battery capacity: "+getBatteryCapacity()+" mah");
     }
+    @Override
+    public String toString() {
+        return turnOn()+"\n"+batteryInfo()+"\n"+checkOsVersion();
+    }
+
 }

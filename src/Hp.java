@@ -17,4 +17,9 @@ public class Hp extends Laptop {
     public String batteryInfo() {
         return ("Hp Battery capacity: "+getBatteryCapacity()+" mah");
     }
+    @Override
+    public String toString() {
+        return turnOn()+"\n"+batteryInfo()+"\n"+checkOsVersion();
+    }
+
 }
